@@ -408,7 +408,7 @@ p {
   cursor: pointer;
   overflow: hidden;
   padding: 10px;
-  height: 370px;
+  height: 390px;
   background-color: #FDFCFA;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -539,44 +539,37 @@ p {
 .social-icons {
     display: flex;
     gap: 15px;
+    align-items: center;
+    opacity: 0.7;
 }
 
-.git-icon {
+#git-icon {
     width: 40px;
     height: 40px;
     background-image: url("github.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-size: contain;        /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.email-icon {
+#email-icon {
     width: 40px;
     height: 40px;
-    background-image: url("email_icon.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-image: url("email.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.linked-icon {
+#linked-icon {
     width: 40px;
     height: 40px;
-    background-image: url("linkedin_icon.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-image: url("social.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.social-icon:hover {
-    background-color: #bbb;
-}
 
 .contact-form {
     padding: 30px;

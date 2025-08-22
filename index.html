@@ -161,8 +161,12 @@
         <div class="project-label"><h4 class = "label-h">A.M.O.A.N</h4><p class = "label-text">App catered to the monitoring of avian well-being</p></div>
       </div>
       <div class="project-thumb" data-modal="proj3">
-        <img src="Modiragatsi.jpg" alt="UWON Project" />
+        <img src="Modiragatsi.jpg" alt="UWAGS Project" />
         <div class="project-label"><h4 class = "label-h">UWAGS Project</h4><p class = "label-text">Engineering business idea centered around mental health</p></div>
+      </div>
+      <div class="project-thumb" data-modal="proj4">
+        <img src="grading.jpeg" alt="UWAGS Project" />
+        <div class="project-label"><h4 class = "label-h">Protection Grading</h4><p class = "label-text">Co-ordinating the trip-times of distribution circuit-breaker</p></div>
       </div>
     </div>
   </section>
@@ -170,16 +174,21 @@
  <section id="contact" class = "main-section"><h2 class="section-title">Contact Me</h2>
       <div class="contact-container">
         <div class="contact-info">
-            <p>For any suggestions, comments or questions feel free to contact me and I will reply as promptly as capable.</p>
+            <p>For any suggestions, comments, or questions, feel free to contact me, and I will reply as promptly as I am able.</p>
             
             <div class="social-media">
-                <div class="social-icons">
-                    <!-- Placeholder social media icons - you can replace these with your actual icons -->
-                    <div id="git-icon" title="GitHub"></div>
-                    <div id="email-icon" title="Email"></div>
-                    <div id="linked-icon" title="LinkedIn"></div>
-                </div>
-            </div>
+    <div class="social-icons">
+        <a href="https://github.com/Dimpho-S" target="_blank" rel="noopener">
+            <div id="git-icon" title="GitHub"></div>
+        </a>
+        <a href="mailto:rddsefora@gmail.com" title="Send Email">
+            <div id="email-icon" title="Email"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/dimpho-sefora-57926a380/" target="_blank" rel="noopener">
+            <div id="linked-icon" title="LinkedIn"></div>
+        </a>
+    </div>
+</div>
         </div>
 
         <div class="contact-form">
@@ -236,21 +245,27 @@
             <p>Bird weight readings with timestamps are recorded by each node in an ESP32-based network and stored in SPIFFS.  ESP-NOW is used by nodes to communicate, sending JSON messages with hop-path tracking and TTL throughout the mesh.</p>
             <p>Through the use of Bluetooth, a gateway ESP32 connects the mesh to a mobile application, enabling the application to request CSV logs, verify secure downloads, or initiate remote deletions.  With mesh relaying enabling coverage outside of direct BLE range, the system guarantees that data is both locally logged and remotely retrievable.
             </p></div></div>
+
   <div id="proj2" class="modal"><div class="modal-content-proj"><span class="close-btn" data-close="proj2">×</span><h4 class ="skill-title">A.M.O.A.N</h4><p class = "story-box">
             <p>
   The A.M.O.A.N app was built to work hand-in-hand with a ESP32 network designed for monitoring bird weights. Using Bluetooth Low Energy (BLE), the app connects to a gateway node that gathers timestamped weight data stored across the network. This makes it possible to retrieve, view, and manage data seamlessly from a phone without needing direct access to every device in the system.
-</p>
-<p>
+</p><p>
   The app allows users to download CSV files of recorded measurements, confirm safe receipt, and even trigger remote file deletion on the ESP32 nodes when storage needs to be managed.
-</p>
-  <div id="proj3" class="modal"><div class="modal-content-proj"><span class="close-btn" data-close="proj3">×<h4 class ="skill-title">UWAGS </h4><p class = "story-box">
-  <p>
-  A business plan for the Uninterrupted Warnings and Guidance System (UWAGS), an app concept that acts as an automatic panic button for individuals experiencing a panic attack. The idea was to integrate the app with a smartwatch, enabling it to detect critical signals and instantly notify the user’s doctor. This approach aimed to provide immediate medical attention, especially in situations where the user might be alone and unable to call for help.
-</p>
+</p> </div></div>
 
-<p>
+<div id="proj3" class="modal"><div class="modal-content-proj"><span class="close-btn" data-close="proj3">×</span><h4 class ="skill-title">UWAGS Project</h4><p class = "story-box">
+            <p>
+  A business plan for the Uninterrupted Warnings and Guidance System (UWAGS), an app concept that acts as an automatic panic button for individuals experiencing a panic attack. The idea was to integrate the app with a smartwatch, enabling it to detect critical signals and instantly notify the user’s doctor. This approach aimed to provide immediate medical attention, especially in situations where the user might be alone and unable to call for help.
+</p><p>
   The concept was entered into the <em>Modiragatsi</em> competition, run by the NWU Business School, where it was selected as one of the finalists. Developing UWGS into a structured business plan gave me the opportunity to combine technical creativity with entrepreneurial thinking, while showcasing how technology can play a vital role in improving health and safety.
-</p>
+</p> </div></div>
+
+<div id="proj4" class="modal"><div class="modal-content-proj"><span class="close-btn" data-close="proj4">×</span><h4 class ="skill-title">Protection Grading</h4><p class = "story-box">
+            <p>
+  Protection Grading is the process of coordinating protective devices in a power system to ensure faults are cleared quickly and selectively. By carefully setting relays, fuses, and circuit breakers, only the device closest to the fault operates, preventing unnecessary outages and maintaining system stability.
+</p><p>
+  For my task, I analyzed a given network, calculated fault levels at key points, and set relay parameters to achieve correct coordination. Using time-current characteristic (TCC) curves, I demonstrated the sequential operation of the protection devices, ensuring both safety and continuity of supply.
+</p> </div></div>
 
   <script src="script.js"></script>
 </body>
